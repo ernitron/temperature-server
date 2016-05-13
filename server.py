@@ -28,7 +28,7 @@ sensor = None
 from cherrypy.lib import auth_basic
 
 # Tre ;)
-users = {'et': '6a6877ca5da6b3d6823bc8fbcf25017b'}
+users = {'et': 'et'}
 
 def validate_password(self, login, password):
     if login in users :
