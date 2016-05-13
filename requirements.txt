@@ -1,4 +1,4 @@
-cherrypy3
+cherrypy
 sqlite3
 requests
 peewee
