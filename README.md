@@ -3,7 +3,13 @@ Temperature Web Server and Daemons for managing Temperature Sensors based on DS1
 
 ## Installation
 
-From now on sudo
+From now on sudo. 
+
+Download and copy all source files in destination directory like 
+
+    /usr/local/bin/temp-server
+
+Install requirements
 
     pip install requirements.txt
     
