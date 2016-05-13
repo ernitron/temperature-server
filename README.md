@@ -5,13 +5,11 @@ Temperature Web Server and Daemons for managing Temperature Sensors based on DS1
 
 From now on sudo. 
 
-Download and copy all source files in destination directory like 
+Download and copy all source files in the destination directory. I.e. execute this on your RPi or CHIP device 
 
     mkdir -p /usr/local/bin/temp-server
-     
-Change to that directory:
-
     cd /usr/local/bin/temp-server
+    git clone https://github.com/ernitron/temperature-server
 
 Install requirements
 
@@ -46,6 +44,11 @@ Add a line like:
     */5 * * * * /usr/local/bin/tempserver/TemperatureDemon.py --root /usr/local/bin/tempserver
 
 On RPi can also send mqtt messages
+
+
+## Disclaimer
+
+Sorry but the server was not intended to serve anyone else but me and my personal sensor network of IoT device in my house. I can not be of much support. Sorry.
 
 
 
