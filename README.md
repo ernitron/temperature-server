@@ -7,7 +7,11 @@ From now on sudo.
 
 Download and copy all source files in destination directory like 
 
-    /usr/local/bin/temp-server
+    mkdir -p /usr/local/bin/temp-server
+     
+Change to that directory:
+
+    cd /usr/local/bin/temp-server
 
 Install requirements
 
