@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block content %}
+<h1><a href="/">{{ place }} : pressure {{ pres }} Pa</a></h1>
+<p>
+ Reading #{{ total_count }} @ {{ timestamp }} 
+</p>
+<p>
+ The SI unit for pressure is the Pascal (Pa), equal to one Newton per square metre (N/m2 or kg*m−1*s−2)'
+</p>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% block content %}
+   <h2><a href="http://localhost:8805/all">All Temperatures</a></h2>
+{% for d in data %}
+   <h2><a href="http://{{d.url}}:8805/">{{loop.index}}) {{d.place}}: {{d.temp}}°C </a></h2>
+{% endfor %}
+<p>
+Datetime: {{datetime}}
+</p>
+{% endblock %}
+

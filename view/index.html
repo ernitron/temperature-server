@@ -1,0 +1,42 @@
+{% extends 'main.html' %}
+{% block content %}
+<h1><a href="/">{{ place }}: {{ temp }} °C</a></h1>
+  <p>
+  Reading {{total_count}} @ {{timestamp }} <br />
+ </p>
+</div>
+    <!-- amCharts javascript sources -->
+    <script type="text/javascript" src="/static/js/amcharts.js"></script>
+    <script type="text/javascript" src="/static/js/serial.js"></script>
+
+    <!-- amCharts javascript code -->
+    <script type="text/javascript">
+        chart = AmCharts.makeChart("chartdiv",
+        {
+            "type": "serial",
+            "categoryField": "date",
+            "dataDateFormat": "YYYY-MM-DD HH:NN:SS",
+            "color": "#333333",
+            "fontFamily": "Georgia",
+            "categoryAxis": { "minPeriod": "mm", "parseDates": true },
+            "chartCursor": { "enabled": true, "categoryBalloonDateFormat": "JJ:NN" },
+            "chartScrollbar": { "enabled": true },
+            "trendLines": [],
+            "graphs": [ { "showBalloon": false, "id": "AmGraph-1", "title": "Temperature", "valueField": "value" }, ],
+            "dataprovider": [],
+            "guides": [],
+            "valueAxes": [ { "id": "ValueAxis-1", "title": "Temperature" }
+            ],
+            "allLabels": [],
+            "balloon": {},
+            "legend": { "enabled": true, "useGraphSettings": true },
+            "titles": [ { "id": "Title-1", "size": 15,
+            "text": "Temperature in {{ place }}" 
+    } ], }); 
+    chart.dataProvider = {{ data }} ; 
+
+    </script>
+
+ <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+
+{% endblock %}

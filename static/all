@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Temp </title>
+<meta http-equiv="refresh" content="60">
+<meta name="generator" content="server">
+<meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/static/css/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/static/js/jquery-2.0.3.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/sticky-footer.css" rel="stylesheet">
+  <style media="screen" type="text/css">
+  .jumbotron { padding: 10px 10px; }
+  </style>
+
+  </head>
+  <body>
+ <div class="container-fluid">
+<div class='jumbotron'>
+
+
+
+   <h2><a href="http://server.ypketron.tk:8805/">1) Server: 20.94°C </a></h1>
+
+   <h2><a href="http://zerver1.ypketron.tk:8805/">2) Corridor: 17.94°C </a></h1>
+
+   <h2><a href="http://zerver2.ypketron.tk:8805/">3) Bedroom: 17.31°C </a></h1>
+
+   <h2><a href="http://zerver3w.ypketron.tk:8805/">4) External Front: 7.63°C </a></h1>
+
+   <h2><a href="http://chip1.ypketron.tk:8805/">5) Living Room: 19.5°C </a></h1>
+
+   <h2><a href="http://chip2.ypketron.tk:8805/">6) Garage: 14.88°C </a></h1>
+
+   <h2><a href="http://frepbx.ypketron.tk:8805/">7) Sgabuzzino: 20.69°C </a></h1>
+
+   <h2><a href="http://192.168.1.221:8805/">8) Zolder: 13.94°C </a></h1>
+
+   <h2><a href="http://192.168.1.141:8805/">9) ESP-Studio: 18.0625°C </a></h1>
+
+   <h2><a href="http://192.168.1.142:8805/">10) ESP8866-2: 5.1875°C </a></h1>
+
+<p>
+Datetime: 2016-04-27 21:26:47
+</p>
+
+
+<small><div id="temp-playing"> </div></small>
+</br> </div> <!-- Jumbotron END -->
+
+<div id="temp-table"> </div>
+  <footer class="footer"> <div class="container">
+  <p class="text-muted">[
+  <a href='/'>temperature</a> | 
+  <a href='/pressure'>pressure</a> |
+  <a href='/humidity'>humidity</a> |
+  <a href='/single'>single</a> | 
+  <a href='/all'>all servers</a> |
+  <a href='/setplacename'>placename</a> |
+  <a href='/filter'>filter</a> |
+  <a href='/reinit'>reinit</a> | 
+  <a href='/debug'>debug</a>
+  ]</p>
+
+<p class="text-muted">
+Temperature server version 4.1.4 - host: dell.ypketron.tk with sensor id: <bound method Sensor.sensorid of <SensorDS18b20.Sensor instance at 0x7f439eb7d998>>
+</p>
+</div></footer>
+<p></div>
+</body>
+</html>

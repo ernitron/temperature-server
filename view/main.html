@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Temp {{ place }}</title>
+<meta http-equiv="refresh" content="300">
+<meta name="generator" content="server">
+<meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="/static/css/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="/static/js/jquery-2.0.3.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/sticky-footer.css" rel="stylesheet">
+  <style media="screen" type="text/css">
+  .jumbotron { padding: 10px 10px; }
+  </style>
+
+  </head>
+  <body>
+ <div class="container-fluid">
+<div class='jumbotron'>
+
+{% block content %}
+
+{% endblock %}
+
+<small><div id="temp-playing"> </div></small>
+</br> </div> <!-- Jumbotron END -->
+
+<div id="temp-table"> </div>
+  <footer class="footer"> <div class="container">
+  <p class="text-muted">[
+  <a href='/'>temperature</a> | 
+  <a href='/pressure'>pressure</a> |
+  <a href='/humidity'>humidity</a> |
+  <a href='/single'>single</a> | 
+  <a href='/all'>all servers</a> |
+  <a href='/setplacename'>placename</a> |
+  <a href='/filter'>filter</a> |
+  <a href='/reinit'>reinit</a> | 
+  <a href='/debug'>debug</a>
+  ]</p>
+
+<p class="text-muted">
+Temperature server version {{ footer.version }} - host: {{ footer.hostname }} with sensor id: {{ footer.sensor }}
+</p>
+</div></footer>
+<p></div>
+</body>
+</html>
