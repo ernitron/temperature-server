@@ -13,7 +13,7 @@ Download and copy all source files in the destination directory. I.e. execute th
 
 Install requirements
 
-    pip install requirements.txt
+    pip install -r requirements.txt
     
 To initialize database:
 
@@ -28,6 +28,20 @@ Of course it can be started at boot:
     cp tempserver.sh /etc/init.d
     update-rc.d tempserver.sh defaults
     
+## 1 Wire setup at boot in the kernel 
+
+Add to /boot/config.txt the following line:
+
+    dtoverlay=w1-gpio,pullup="y"
+
+Modprobe with:
+
+        # sudo modprobe w1_gpio pullup=1
+        # sudo modprobe w1_therm strong_pullup=1 (or =2)
+
+In Raspberry PI: 1-Wire Default reading is on GPIO 4
+In C.H.I.P. : 1-Wire is on LCD-D2 
+
     
 ## See on browser
 
