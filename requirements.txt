@@ -2,4 +2,4 @@ cherrypy
 sqlite3
 requests
 peewee
-jinja2
+Jinja2
