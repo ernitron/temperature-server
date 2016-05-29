@@ -1,5 +1,5 @@
 cherrypy
-sqlite3
+#sqlite3 -- already installed for python > 2.7
 requests
 peewee
-Jinja2
+jinja2
